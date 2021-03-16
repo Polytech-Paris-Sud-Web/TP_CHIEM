@@ -1,0 +1,3 @@
+<div *ngIf="this.articles">
+    <app-article *ngFor="let article of this.articles" [article]="article" (deletedArticle)="delete($event)">
+</app-article>

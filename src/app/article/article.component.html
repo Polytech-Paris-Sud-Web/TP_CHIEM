@@ -1,0 +1,7 @@
+<div *ngIf="this.article" class="article">
+    <h1 class="title"> {{this.article?.title}} </h1>
+    <p class="content"> {{this.article?.content}} </p>
+    <p class="author"> {{this.article?.author}} </p>
+    <button (click)='delete()'>Supprimer</button>
+    <button (click)='show()'>Afficher</button>
+</div>
